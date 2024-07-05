@@ -19,7 +19,7 @@
                 <div class="col-lg-4 col-12 d-flex justify-content-lg-end align-items-center ms-auto">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
 
                             <li class="breadcrumb-item active" aria-current="page">Services Listing</li>
                         </ol>
@@ -42,7 +42,7 @@
                         <div class="row">
                             <div class="col-lg-5 col-md-5 col-12">
                                 <div class="services-image-wrap">
-                                   <a href="services-detail.html">
+                                   <a href="{% url 'service-detail' service.id %}">
                                         <img src="{{service.photos.first.image.url}}" class="services-image img-fluid" alt="">
                                         <img src="{{service.photos.last.image.url}}" class="services-image services-image-hover img-fluid" alt="">
 

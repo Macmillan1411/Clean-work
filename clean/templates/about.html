@@ -5,105 +5,129 @@
 
 {% block content %}
 
-<main>
+   <main>
 
-    <section class="banner-section d-flex justify-content-center align-items-end">
-        <div class="section-overlay"></div>
+            <section class="banner-section d-flex justify-content-center align-items-end">
+                <div class="section-overlay"></div>
 
-        <div class="container">
-            <div class="row">
+                <div class="container">
+                    <div class="row">
 
-                <div class="col-lg-7 col-12">
-                    <h1 class="text-white mb-lg-0">Contact</h1>
-                </div>
+                        <div class="col-lg-7 col-12">
+                            <h1 class="text-white mb-lg-0">About Us</h1>
+                        </div>
 
-                <div class="col-lg-4 col-12 d-flex justify-content-lg-end align-items-center ms-auto">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <div class="col-lg-4 col-12 d-flex justify-content-lg-end align-items-center ms-auto">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
 
-                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
-                        </ol>
-                    </nav>
-                </div>
+                                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                                </ol>
+                            </nav>
+                        </div>
 
-            </div>
-        </div>
-    </section>
- 
-
-    <section class="contact-section section-padding">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-5 col-12 me-auto mb-lg-0 mb-5">
-                    <h2 class="my-3">We're happy to help</h2>
-
-                    <p>Best Cleaning Service is ready to serve you. Clean Work is a professional website layout for your business.</p>
-
-                    <div class="contact-info bg-white shadow-lg">
-                        <h3 class="mb-4">Contact Information</h3>
-
-                        <h5 class="d-flex mt-3 mb-3">
-                            <i class="bi-geo-alt-fill custom-icon me-3"></i>
-                            Akershusstranda 20, 0150 Oslo, Norway
-                        </h5>
-
-                        <h5 class="d-flex mb-3">
-                            <i class="bi-telephone-fill custom-icon me-3"></i>
-
-                            <a href="tel: 110-220-9800">
-                                110-220-9800
-                            </a>
-                        </h5>
-
-                        <h5 class="d-flex">
-                            <i class="bi-envelope-fill custom-icon me-3"></i>
-
-                            <a href="mailto:info@company.com">
-                                info@company.com
-                            </a>
-                        </h5>
                     </div>
                 </div>
+            </section>
+         
 
-                <div class="col-lg-6 col-12">
-                    <form class="custom-form consulting-form bg-white shadow-lg mb-5 mb-lg-0" action="#" method="post" role="form">
-                        <div class="consulting-form-header d-flex align-items-center">
-                            <h3 class="mb-4">Get a Free Quotation</h3>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <img src="{% static 'images/cleaning-concept-with-man-showing-business-card.jpg' %}" class="featured-image img-fluid">
                         </div>
 
-                        <div class="consulting-form-body">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="text" name="volunteer-name" id="volunteer-name" class="form-control" placeholder="John Walker" required>
-                                </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="featured-block">
+                                <h2 class="mb-4">Cleaning Service Agency Since 2018</h2>
 
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <input type="email" name="volunteer-email" id="volunteer-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="yours@gmail.com" required>
-                                </div>
-                            </div>
+                                <p>Tooplate website provides a variety of latest HTML templates or Bootstrap 5 Themes for your <a href="#">business websites</a>.</p>
 
-                            <select class="form-select form-control" name="job-salary" id="job-salary" aria-label="Default select example">
-                                <option selected>Service Type</option>
-                                <option value="1">House cleaning</option>
-                                <option value="2">Car washing</option>
-                                <option value="2">Office cleaning</option>
-                                <option value="2">Factory cleaning</option>
-                            </select>
+                                <p>Clean Work is a blue color theme HTML CSS template for your company website. You may use this template for any purpose.</p>
 
-                            <textarea name="volunteer-message" rows="3" class="form-control" id="volunteer-message" placeholder="Comment (Optional)"></textarea>
-
-                            <div class="col-lg-6 col-md-10 col-8 mx-auto">
-                                <button type="submit" class="form-control">Submit Request</button>
+                                <a class="custom-btn btn button button--atlas mt-3" href="{% url 'contact' %}">
+                                    <span>Get in touch</span>
+    
+                                    <div class="marquee" aria-hidden="true">
+                                        <div class="marquee__inner">
+                                            <span>Get in touch</span>
+                                            <span>Get in touch</span>
+                                            <span>Get in touch</span>
+                                            <span>Get in touch</span>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </form>
+
+                    </div>
                 </div>
+            </section>
 
-            </div>
-        </div>
-    </section>
-</main>
 
-{% endblock content %}
+            <section class="team-section section-padding section-bg">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <h2 class="mb-4">Meet People</h2>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 mb-lg-0 mb-md-5">
+                            <img src="{% static 'images/teams/young-cleaning-man-wearing-casual-clothes.jpg' %}" class="team-image img-fluid">
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-lg-center mt-4 mt-lg-0 mt-md-0 mb-5 mb-lg-0">
+                            <div class="team-info mx-auto mx-lg-0">
+                                <h4 class="mb-2">Josh</h4>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt dolore magna</p>
+
+                                <div class="border-top mt-3 pt-3">
+                                    <p class="d-flex mb-0">
+                                        <i class="bi-whatsapp me-2"></i>
+
+                                        <a href="tel: 110-220-9800">
+                                            110-220-9800
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <img src="{% static 'images/teams/happy-young-woman-wiping-kitchen-counter-wearing-yellow-gloves.jpg' %}" class="team-image img-fluid">
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 d-flex justify-content-lg-center mt-4 mt-lg-0 mt-md-0">
+                            <div class="team-info mx-auto mx-lg-0">
+                                <h4 class="mb-2">Marie</h4>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing tempor incididunt dolore magna</p>
+
+                                <div class="border-top mt-3 pt-3">
+                                    <p class="d-flex mb-0">
+                                        <i class="bi-whatsapp me-2"></i>
+
+                                        <a href="tel: 110-220-9800">
+                                            110-220-9800
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            {% include 'partners.html' %}
+        </main>
+
+  
+
+{% endblock content %} 

@@ -13,7 +13,7 @@ def services(request):
 
 
 def services_detail(request, pk):
-    service = Service.objects.filter(id = pk)
+    service = Service.objects.get(id = pk)
 
     context = {'service': service}
     return render(request,'services-detail.html', context)

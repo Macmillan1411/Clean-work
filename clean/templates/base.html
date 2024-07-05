@@ -87,16 +87,9 @@ Free Bootstrap 5 HTML Template
                         <a class="nav-link" href="{% url 'about' %}">About Us</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-
-                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{% url 'services' %}">Our Services</a></li>
-
-                            <li><a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-
-                            <li><a class="dropdown-item" href="page-404.html">Page 404</a></li>
-                        </ul>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'services' %}">Services</a>
                     </li>
 
                     <li class="nav-item">
@@ -116,11 +109,6 @@ Free Bootstrap 5 HTML Template
     {% block content %}
     {% endblock content %}
 
-
-
-
-
-
 <!--Site Footer Section-->
 <footer class="site-footer">
     <div class="container">
@@ -134,11 +122,12 @@ Free Bootstrap 5 HTML Template
                 <ul class="footer-menu d-flex flex-wrap ms-5">
                     <li class="footer-menu-item"><a href="{% url 'about' %}" class="footer-menu-link">About Us</a></li>
 
-                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Blog</a></li>
+                    <!--<li class="footer-menu-item"><a href="#" class="footer-menu-link">Blog</a></li>-->
 
-                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Reviews</a></li>
+                    <!--<li class="footer-menu-item"><a href="#" class="footer-menu-link">Reviews</a></li>-->
 
-                    <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                    <li class="footer-menu-item"><a href="{% url 'contact' %}" class="footer-menu-link">Contact</a></li>
+                     
                 </ul>
             </div>
 
@@ -147,14 +136,14 @@ Free Bootstrap 5 HTML Template
 
                 <ul class="footer-menu">
                     <li class="footer-menu-item">
-                        <a href="#" class="footer-menu-link">
+                        <a href="{% url 'service-detail' 2 %}" class="footer-menu-link">
                             <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
                             House Cleaning
                         </a>
                     </li>
 
                     <li class="footer-menu-item">
-                        <a href="#" class="footer-menu-link">
+                        <a href="{% url 'service-detail' 4 %}" class="footer-menu-link">
                             <i class="bi-chevron-double-right footer-menu-link-icon me-2"></i>
                             Car Washing
                         </a>
