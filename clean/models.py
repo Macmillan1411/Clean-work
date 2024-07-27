@@ -21,8 +21,17 @@ class Service(models.Model):
     photos = models.ManyToManyField(Photo, related_name='related_photos')
 
     #rating = models.PositiveIntegerField(default=5, MaxValueValidator = 5, MinValueValidator = 1)
+    best_offer = models.BooleanField(default=False)
+    
 
 
     def __str__(self):
         return self.name
+    
+    
+class Request(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField()
+    service = models.ForeignKey(Service,on_delete=models.CASCADE,related_name='requests')
+    comment = models.TextField()
 
